@@ -8,8 +8,8 @@
     <ProjectGuid>{BADC799B-0178-4EC0-B051-AB7B51ACC58F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Plugins</RootNamespace>
-    <AssemblyName>Plugins</AssemblyName>
+    <RootNamespace>DeleteEntityReferenceBug.Plugins</RootNamespace>
+    <AssemblyName>DeleteEntityReferenceBug.Plugins</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -64,11 +64,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PreOperateAccountDelete.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="MyKey.snk" />
     <None Include="packages.config" />
+    <None Include="spkl.json" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
